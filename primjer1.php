@@ -8,7 +8,7 @@
     <title>CRUD</title>
   </head>
   <body>
-
+<h1>CRUD OPERACIJE</h1>
 <table class="table table-dark " style="margin-left:auto; width:50%; margin-right:auto; margin-top:2%">
   <thead>
     <tr>
