@@ -32,7 +32,7 @@
       <td>  <?php echo $row['Naziv'] ?></td>
       <td> <?php echo $row['Boja'] ?></td>
       <td> <a href="delete.php?ID=<?php echo $row['ID']?>" class="btn btn-danger"> Delete </a> &nbsp; 
-      <a href="update.php?ID=<?php echo $row['ID']?>" class="btn btn-info"> Edit</a> </td>
+      <a href="edit.php?ID=<?php echo $row['ID']?>" class="btn btn-info"> Edit</a> </td>
     </tr>
     <?php
     }
