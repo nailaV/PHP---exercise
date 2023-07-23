@@ -12,4 +12,6 @@
             echo "Greska: " . $sql->error();
         }
     }
+
+    mysqli_close($conn);
 ?>
