@@ -9,8 +9,8 @@
   </head>
   <body>
 
-<h1>CRUD OPERACIJE aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
-<table class="table table-dark " style="margin-left:auto; width:100%; margin-right:auto; margin-top:2%">
+<h1 style="text-align:center; margin-top: 2%;">CRUD OPERACIJE</h1>
+<table class="table table-dark " style="margin-left:auto; width:50%; margin-right:auto; margin-top:2%">
 
   <thead>
     <tr>
@@ -36,6 +36,7 @@
     </tr>
     <?php
     }
+    mysqli_close($conn);
     ?>
   </tbody>
 </table>
@@ -51,8 +52,6 @@
   </div>
   <button type='submit' value='submit' name='submit' class="btn btn-primary" style="margin-left:40%">Submit</button>
 </form> 
-
-
 
 
   </body>
