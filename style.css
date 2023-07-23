@@ -1,0 +1,30 @@
+#forma{
+    border: 1px solid blue;
+    padding: 1%;
+    margin-left:auto;
+    margin-right: auto;
+    width: 30%;
+}
+label {
+    text-align:left;
+    width:150px;
+    display:block;
+    float:left;
+    clear:right;
+    font-size:18;
+    color:red;
+  }
+
+input{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+#divzaformu{
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
