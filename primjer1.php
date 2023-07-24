@@ -34,7 +34,8 @@
       <td> <?php echo $row['Boja'] ?></td>
       <td> <img src="<?php echo $row['image_path'] ?>" alt="No picture." style="width:50px; height:50px"> </td>
       <td> <a href="delete.php?ID=<?php echo $row['ID']?>" class="btn btn-danger"> Delete </a> &nbsp; 
-      <a href="edit.php?ID=<?php echo $row['ID']?>" class="btn btn-info"> Edit</a> </td>
+      <a href="edit.php?ID=<?php echo $row['ID']?>" class="btn btn-info"> Edit</a>  &nbsp; 
+      <a href="detalji.php?ID=<?php echo $row['ID']?>" class="btn btn-info"> Details</a> </td>
     </tr>
     <?php
     }
