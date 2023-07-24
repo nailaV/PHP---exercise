@@ -11,6 +11,7 @@ if(isset($_GET['ID']))
         {
             $naziv=$row['Naziv'];
             $boja=$row['Boja'];
+            $slika=$row['image_path'];
         }
     }
     else
@@ -58,6 +59,10 @@ mysqli_close($conn);
   <div class="form-group" id="divzaformu">
     <label>Boja</label>
     <input type="text" name="Boja" value="<?php echo $boja ?>">
+  </div>
+  <div class="form-group" id="divzaformu">
+    <label>Slika</label> <br>
+    <img src="<?php echo $slika ?>" alt="No picture"  style="width:60%; height:150px; margin-left:20%; margin-right:20%">
   </div>
   <button type='submit' value='submit' name='submit' class="btn btn-primary" style="margin-left:40%">Submit</button>
 </form> 
