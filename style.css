@@ -12,6 +12,9 @@ label {
     float:left;
     clear:right;
     font-size:18;
+
+    color:red;
+
   }
 
 input{
