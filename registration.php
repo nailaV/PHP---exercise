@@ -27,8 +27,8 @@
         $email = $_POST['email'];
         $password = password_hash($_POST['password'],PASSWORD_BCRYPT);
 
-        $sql = "INSERT INTO `korisnici` (`username`,`password`,`email`) 
-        VALUES('$username','$password','$email')";
+        $sql = "INSERT INTO `korisnici` (`username`,`password`,`email`,`rola`) 
+        VALUES('$username','$password','$email', 'korisnik')";
 
         $result = mysqli_query($conn,$sql);
 

@@ -20,7 +20,7 @@
 </html>
 
 <?php 
-    session_start();
+    include 'session.php';
     include 'konekcija.php';
     if(isset($_POST['submit'])){
         $username = $_POST['username'];
@@ -32,6 +32,7 @@
 
         if(password_verify($password,$row['password'])){
             $_SESSION['logged_in']=true;
+            var_dump($_SESSION['logged_in']);
             $_SESSION['username']=$username;
             header("Location: primjer1.php");
             exit();

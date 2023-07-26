@@ -1,6 +1,8 @@
 <?php
 include 'session.php';
-include "konekcija.php";
+include 'konekcija.php';
+
+
 if(isset($_GET['ID']))
 {
     $userID=$_GET['ID'];
@@ -16,7 +18,7 @@ if(isset($_GET['ID']))
         }
     }
     else
-        echo("Error.");
+    echo "Error";
 }
 
 
@@ -34,7 +36,7 @@ if(isset($_POST['submit']))
         exit();
     }
     else
-        echo("Error");
+        echo"Error";
 }
 
 mysqli_close($conn);

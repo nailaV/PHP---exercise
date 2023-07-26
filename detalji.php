@@ -4,7 +4,7 @@ include "konekcija.php";
 if(isset($_GET['ID']))
 {
     $proizvodID=$_GET['ID'];
-   $sql="SELECT * FROM `proizvodi` LEFT JOIN `detalji` ON ID='$proizvodID'";
+   $sql="SELECT * FROM `proizvodi` INNER JOIN `detalji` ON proizvodi.ID=detalji.proizvodID where proizvodi.ID='$proizvodID'";
    $result=mysqli_query($conn, $sql);
     if(mysqli_num_rows($result)>0){
         while($row=$result->fetch_assoc())
@@ -34,6 +34,7 @@ if(isset($_GET['ID']))
    ?>" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title"><?php echo $naziv ?></h5>
+    <h5 class="card-title"><?php echo $boja ?></h5>
     <p class="card-text"><?php echo $opis ?></p>
     <h5 class="card-title"><?php if($kolicina!=0){ 
                                     echo $kolicina;}
