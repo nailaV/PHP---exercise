@@ -1,4 +1,5 @@
 <?php
+include 'session.php';
 include "konekcija.php";
 if(isset($_GET['ID']))
 {

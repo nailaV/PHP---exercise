@@ -27,7 +27,11 @@ if(isset($_GET['ID']))
 </head>
 <body>
 <div class="card" style="width: 20%; margin-left: 40%; margin-right:40%; margin-top:2%">
-  <img class="card-img-top" src="<?php echo $slika ?>" alt="Card image cap">
+  <img class="card-img-top" src="<?php
+  if($slika == null){
+    echo $slika;
+  }
+   ?>" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title"><?php echo $naziv ?></h5>
     <p class="card-text"><?php echo $opis ?></p>

@@ -1,3 +1,4 @@
+<?php include 'session.php' ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,8 +9,12 @@
     <title>CRUD</title>
   </head>
   <body>
-
 <h1 style="text-align:center; margin-top: 2%;">CRUD OPERACIJE</h1>
+<?php if($_SESSION['logged_in']):?>
+<div>
+  <a href="logout.php" class="btn btn-dark" style="margin-left:70%;margin-right:20%;width:10%"> LogOut </a>
+</div>
+<?php endif; ?>
 <table class="table table-dark " style="margin-left:auto; width:50%; margin-right:auto; margin-top:2%">
 
   <thead>
@@ -44,6 +49,7 @@
   </tbody>
 </table>
 
+
 <form action="insert.php" method="POST" id="forma" enctype="multipart/form-data">
   <div class="form-group" id="divzaformu">
     <label>Naziv</label>
@@ -63,3 +69,4 @@
 
   </body>
 </html>
+
